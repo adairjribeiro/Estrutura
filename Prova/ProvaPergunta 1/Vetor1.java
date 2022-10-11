@@ -7,6 +7,10 @@ public class Vetor1 {
         for (int i = 0; i < num; i++) {
 
         }
+        
+        int x = num[j]
+        num[j+1] = num[j]
+        num[j] = x;
 
         System.out.println("Em ordem decrescente.");
         for (int i = 0; i < num.length; i++) {
