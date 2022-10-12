@@ -11,7 +11,7 @@ public class PrincipalPost {
         Iterator<Post> itr;
         int opcao;
         do {
-            opcao=Integer.parseInt(JOptionPane.showInputDialog("<1> Cadastrar Post\n<2> Visualisar Post ordem Crescente\n<3> Visualisar Post ordem Decrescente\n<4> Sair"));
+            opcao=Integer.parseInt(JOptionPane.showInputDialog("<1> Cadastrar Post\n<2> Visualisar Post relevância 1\n<3> Visualisar Post relevância 2\n<4> Sair"));
             switch (opcao)
             {
                 case 1:
@@ -26,7 +26,7 @@ public class PrincipalPost {
                     for (itr = dq.iterator();itr.hasNext();) {
                         texto+=itr.next().mostraDados();
                     }
-                    JOptionPane.showMessageDialog(null, texto,"De A...Z",JOptionPane.DEFAULT_OPTION);
+                    JOptionPane.showMessageDialog(null, texto,"POST RELEVÂNCIA 1",JOptionPane.DEFAULT_OPTION);
                     break;
 
                 case 3:
@@ -34,7 +34,7 @@ public class PrincipalPost {
                     for (itr = dq.descendingIterator(); itr.hasNext();) {
                         texto+=itr.next().mostraDados();
                     }
-                    JOptionPane.showMessageDialog(null, texto,"De Z...A",JOptionPane.DEFAULT_OPTION);
+                    JOptionPane.showMessageDialog(null, texto,"POST RELEVÂNCIA 2",JOptionPane.DEFAULT_OPTION);
                     break;
                 case 4:
                     break;
