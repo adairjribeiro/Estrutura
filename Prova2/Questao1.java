@@ -4,7 +4,7 @@ public static void main(String[] args) throws FileNotFoundException{
 Scanner scanner;
 Stack Nomes = new Stack();
 
-    scanner = new Scanner(new File("c:\\teste/nomes.txt"));
+scanner = new Scanner(new File("/nomes.txt"));
 public class ArrayStack<E>  implements Stack<E> {
 protected int capacity; 
 public static final int CAPACITY = 1000; 
