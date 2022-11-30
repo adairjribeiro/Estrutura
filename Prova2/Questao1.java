@@ -61,5 +61,6 @@ System.out.println(", retorno: " + element);
 System.out.println("Resultado: tamanho = " + size() + ", é vazio = " + isEmpty());
 System.out.println("Pilha: " + this); // conteúdo da pilha
 }
-
+E.status(pop());
+System.out.println(Nomes);
 }
